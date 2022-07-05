@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Configuration
-nav_order: 2
+title: Installation
+nav_order: 3
 ---
 
-# Configuration
+# Installation
 {: .no_toc }
 
 Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
