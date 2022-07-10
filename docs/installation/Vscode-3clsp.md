@@ -12,3 +12,5 @@ If you followed all the previous steps then, you should have VScode (a fancy cod
 ![](../../assets/images/extension-landing.png)
 
 Click on install and reload your editor. You're now set. You can now open up a project and start converting.
+
+[Extension Page](https://marketplace.visualstudio.com/items?itemName=Purs3Lab.3clsp){: .btn .btn-purple }
