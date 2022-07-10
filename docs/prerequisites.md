@@ -50,3 +50,12 @@ files it has compiled.
 ```sh
 sudo apt install ccache
 ```
+
+#### [](#header-4)lld (OPTIONAL)
+LLD is a new, high-performance linker. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project. 
+
+
+```sh
+sudo apt update
+sudo apt install lld
+```
