@@ -19,6 +19,11 @@ Before you start converting your code, you need to follow some simple steps to g
 
 Make sure your system has basic tools like **python,git,curl etc** and the following libraries and tools installed before you proceed.
 
+### [](#header-3)VSCode
+Visual Studio Code is a code editor developed by Microsoft and works best when using this tool, but any other code editor that supports **LSP** would work. For the sake of easeness and it's popularity we have just published our extension on the Visual Studio Marketplace. But in the next few releases we might release it to other platforms.
+
+[VSCode](https://code.visualstudio.com/download){: .btn .btn-purple }
+
 ### [](#header-3)CMake
 
 For Linux, install CMake 3.8 or later. For Windows, CMake is bundled as part of your Visual Studio install.

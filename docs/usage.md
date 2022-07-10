@@ -11,7 +11,8 @@ A compilation database is a **JSON file**, which consist of an array of “comma
 
 ### [](#header-3)Creating Compile DBs
 Compile databses can be hard to write and can become complicated at times. If your project uses build systems like **make, boost, SCons etc.** You can leverage the use of the tool called **Bear** that is a tool that generates a compilation database for clang tooling. Some build system natively supports the generation of JSON compilation database. For projects which does not use such build tool, Bear generates the JSON file during the build process.
-[Bear Github Repo](https://github.com/rizsotto/Bear){: .btn .btn-purple }
+
+[Bear](https://github.com/rizsotto/Bear){: .btn .btn-purple }
 
 Bear is [packaged](https://repology.org/project/bear/versions) for many
 distributions. Check out your package manager.
@@ -26,8 +27,9 @@ should do the trick.
 #### [](#header-4)How to Use Bear
 
 After installation the usage is like this:
-
-    bear -- <your-build-command>
+```sh
+ bear -- <your-build-command>
+```
 
 The output file called `compile_commands.json` is saved in the current directory.
 
