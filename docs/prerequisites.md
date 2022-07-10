@@ -15,15 +15,15 @@ Before you start converting your code, you need to follow some simple steps to g
 > Due to the restrictions by Microsoft the tool only works on Linux and Windows based operating systems.
 > Basic installation of Linux and Windows OS makes sure that a C compiler and other basic build tools are pre-installed.
 
-### [](#header-3)Basic
+## [](#header-2) Basic Tools
 
-Make sure your system has the following libraries and tools installed before you proceed.
+Make sure your system has basic tools like **python,git,curl etc** and the following libraries and tools installed before you proceed.
 
-#### [](#header-4)CMake
+### [](#header-3)CMake
 
 For Linux, install CMake 3.8 or later. For Windows, CMake is bundled as part of your Visual Studio install.
 
-#### [](#header-4)Ninja
+### [](#header-3)Ninja
 
 This tool will build the compiler and all other supporting tools on your system.
 
@@ -35,7 +35,7 @@ This tool will build the compiler and all other supporting tools on your system.
 sudo apt install ninja-build
 ```
 
-#### [](#header-4)Ccache (OPTIONAL)
+### [](#header-3)Ccache (OPTIONAL)
 Install `ccache` to speed up the compiler build on Linux and
 MacOS. [ ccache](https://ccache.samba.org) is a smart cache for GCC or Clang. It
 works as a shim, and uses the hash of source files and their included headers
@@ -51,7 +51,7 @@ files it has compiled.
 sudo apt install ccache
 ```
 
-#### [](#header-4)lld (OPTIONAL)
+### [](#header-3)lld (OPTIONAL)
 LLD is a new, high-performance linker. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project. 
 
 
