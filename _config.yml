@@ -39,6 +39,11 @@ search:
 
 # Enable or disable heading anchors
 heading_anchors: true
+# For upper Right Corner in Search Bar
+aux_links:
+   "3cLSP on GitHub":
+     - "//github.com/purs3lab/3clsp"
+
 # Last edited TimeStamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p"
