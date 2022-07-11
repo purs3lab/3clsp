@@ -4,6 +4,7 @@ title: Usage
 nav_order: 4
 has_children: true
 ---
+# [](#header-1) Usage Details
 
 ## [](#header-2) Compilation Databases
 A compilation database is a **JSON file**, which consist of an array of “command objects”, where each command object specifies one way a translation unit is compiled in the project. Each command object contains the translation unit's main file, the working directory of the compile run and the actual compile command.
