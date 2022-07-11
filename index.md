@@ -25,4 +25,8 @@ The new types include:
 * The `_Array_ptr` type for pointers to elements of arrays. Pointer arithmetic is allowed on these types. When `_Array_ptr` pointers are used to access memory, they are bounds checked and checked for non-nullness. Programmers must declare the bounds of `_Array_ptr` variables to be able to use them to access memory. The compiler constructs bounds for `_Array_ptr` typed expressions based on the bounds for variables.
 * The `_Nt_array_ptr` type for pointers to elements of null-terminated arrays. These are similar to `_Array_ptr` types, with two differences. The element just beyond the declared bounds can be read or have a zero written to it. If the element is non-null, the bounds for the pointer can be widened by 1 element.
 
+The latter two types are associated with bounds declarations, that define how long the pointed-to array can be. For example, `_Array_ptr<int> x : count(10);` is a declaration of variable `x` which is a pointer to an array of size 10.
+
+Programmers can annotate regions of code as checked; e.g., a code block `{ ... }` can be marked `_Checked { ... }`. Checked regions restrict their contents so as to ensure spatial safety; e.g., checked regions may only use checked pointers. Regions of code deemed to be unchecked may freely intermix checked and legacy pointers. This flexibility permits a partial, incremental conversion of programs.
+
 [More Info on CheckedC](https://github.com/secure-sw-dev/checkedc/wiki){: .btn .btn-purple }
