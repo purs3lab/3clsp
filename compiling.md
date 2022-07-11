@@ -16,7 +16,7 @@ This assumes that the Checked C version of `clang` is on your path.
 ### [](#header-3) Hello World
 
 Here is the source code for "hello, world" in Checked C:
-```C
+```c
 #include <stdio_checked.h>
 #include <stdchecked.h>
 
@@ -54,7 +54,7 @@ int main(int argc, _Array_ptr<_Nt_array_ptr<char>> argv : count(argc)) {
 
 The compiler always checks whether declared bounds are valid. This is important because bounds checking is not meaningful if the declared bounds are wrong. Declared bounds are valid if they are implied by existing declared bounds and other information in the program. For example, given
 
-```C
+```c
 void f(array_ptr<int> p : count(len), int len) {
   array_ptr<int> r : count(len) = p;
   ...
