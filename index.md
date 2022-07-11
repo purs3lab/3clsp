@@ -13,7 +13,16 @@ permalink: /
 {: .fs-6 .fw-300 }
 
 ## Introduction
-CheckedC was developed by Microsoft as an extension to the regular **C** we know and love but adds checking to C to detect or prevent common programming errors such as buffer overruns, out-of-bounds memory accesses, and incorrect type casts. We leverage the use of **3C** which works on legacy C code and annotates pointers and infers bounds for those pointers based on their callers and context. We created an extension to the _clangd_ LSP framework that understands your C/C++ code and adds smart features to your editor like code completion, compile errors, go-to-definition and more.
+CheckedC was developed by Microsoft as an extension to the regular **C** we know and love but adds checking to C to detect or prevent common programming errors such as buffer overruns, out-of-bounds memory accesses, and incorrect type casts.
+
+
+<details>
+    <summary>Toggle Switch</summary>
+    Foldable Content[enter image description here][1]
+</details>
+
+{% include compiler.html %}
+
 
 Checked C adds checking to C to prevent or detect common low-level programming errors. Checked C provides a way for programmers to check that pointer and array accesses stay in bounds at run time. It also checks for memory accesses via null pointers. 
 

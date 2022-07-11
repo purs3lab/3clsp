@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Caution
+title: FAQs
 nav_order: 6
 ---
 # [](#header-1) Caution
