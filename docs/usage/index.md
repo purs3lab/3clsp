@@ -12,7 +12,7 @@ A compilation database is a **JSON file**, which consist of an array of “comma
 3clsp needs a compilation databse to work. A compilation database specifies which files in your project 3c needs to work on. 
 
 ### [](#header-3)Creating Compile DBs
-Compile databses can be hard to write and can become complicated at times. If your project uses build systems like **make, boost, SCons etc.** You can leverage the use of the tool called **Bear** that is a tool that generates a compilation database for clang tooling. Some build system natively supports the generation of JSON compilation database. For projects which does not use such build tool, Bear generates the JSON file during the build process.
+Compile databses can be lengthy to write and can become complicated at times. If your project uses build systems like **make, boost, SCons etc.** You can leverage the use of a tool called **Bear** that generates a compilation database for clang tooling. Some build system natively supports the generation of JSON compilation database. For projects which does not use such build tool, Bear generates the JSON file during the build process.
 
 [Bear](https://github.com/rizsotto/Bear){: .btn .btn-purple }
 
