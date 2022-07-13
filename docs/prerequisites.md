@@ -52,39 +52,20 @@ Bear is [packaged](https://repology.org/project/bear/versions) for many distribu
 The output file called `compile_commands.json` is saved in the current directory.
 
 
-<details>
-    <summary>CCache(Optional)</summary>
-    Install ccache to speed up the compiler build on Linux.
+### [](#header-3)Ccache(OPTIONAL)
+
+Install ccache to speed up the compiler build on Linux.
 
 ```sh
 sudo apt install ccache
 ```
 
-</details>
 
+### [](#header-3)LLD(OPTIONAL)
 
-<details>
-    <summary>lld(Optional)</summary>
-    LLD is a new, high-performance linker.
+   LLD is a new, high-performance linker.
 
 ```sh
 sudo apt update
 sudo apt install lld
 ```
-
-</details>
-{% capture text-capture %}
-
-```html
-
-<div class="demo-thats-all-container">  
-    <div class="demo-thats-all-folks">
-      That's All Folks
-    </div>
-</div>
-
-``` <!-- remove escape '\' in your code -->
-
-{% endcapture %}
-
-{% include widgets/toggle-field.html toggle-name="toggle-thats" button-text="Cod for Thats All Folks" toggle-text=text-capture  footer="cheers!" %}

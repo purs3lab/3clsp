@@ -32,8 +32,6 @@ ninja clang 3c 3Cclangd
 
 - The above instructions already assume the use of the [Ninja](https://ninja-build.org/) build tool; you may have to install it. You can alternatively use `make` (remove `-G Ninja` from the `cmake` command and replace `ninja` with `make`), but Ninja is
   much faster in our experience.
-[See lld Installation]({{ site.baseurl }}{% link docs/prerequisites.md %})
-
 
 - Pass `-DLLVM_USE_LINKER=lld`. This requires a sufficiently recent
   version of `lld` to be installed on your system.
@@ -45,6 +43,8 @@ ninja clang 3c 3Cclangd
 
 - You might want to use `-DCMAKE_BUILD_TYPE=RelWithDebInfo` if you are running 3C enough between builds
 </details>
+
+[See lld Installation]({{ site.baseurl }}{% link docs/prerequisites.md %})
 
 
 
