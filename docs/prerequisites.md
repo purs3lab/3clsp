@@ -23,18 +23,14 @@ sudo apt-get install build-essential libssl-dev
 ```
 
 ### [](#header-3)VSCode
-Visual Studio Code is a code editor developed by Microsoft and works best when using this tool, but any other code editor that supports **LSP** would work. For the sake of easeness and it's popularity we have just published our extension on the Visual Studio Marketplace. But in the next few releases we might release it to other platforms.
+Visual Studio Code is a code editor developed by Microsoft and works best when using this tool, but any other code editor that supports **LSP** would work.
 
 [VSCode](https://code.visualstudio.com/download){: .btn .btn-purple }
 
 ### [](#header-3)CMake
 
 ```sh
-cd /tmp
-wget https://github.com/Kitware/CMake/releases/download/v3.20.0/cmake-3.20.0.tar.gz
-tar -zxvf cmake-3.20.0.tar.gz
-cd cmake-3.20.0 && ./bootstrap
-make && sudo make install
+sudo apt-get -y install cmake
 ```
 After the software is successfully installed, you can verify its installation and also if the correct version is installed, through the following command:
 ```sh

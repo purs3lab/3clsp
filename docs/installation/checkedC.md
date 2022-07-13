@@ -29,6 +29,11 @@ ninja clang 3c 3Cclangd
 
 <details>
     <summary>Extra Build Options</summary>
+    <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
 
 - The above instructions already assume the use of the [Ninja](https://ninja-build.org/) build tool; you may have to install it. You can alternatively use `make` (remove `-G Ninja` from the `cmake` command and replace `ninja` with `make`), but Ninja is
   much faster in our experience.
