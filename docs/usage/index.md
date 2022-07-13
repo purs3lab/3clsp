@@ -25,4 +25,4 @@ After you load in the project in VSCode open up `program1.c` or `program2.c` and
 
 ### [](#header-3) tiny-bignum-c Project
 
-{% include youtubePlayer.html id=page.H1LyfBN02Tk %}
+{% include youtube-player.html id=page.H1LyfBN02Tk %}
