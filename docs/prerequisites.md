@@ -54,7 +54,7 @@ The output file called `compile_commands.json` is saved in the current directory
 
 <details>
     <summary>CCache(Optional)</summary>
-    Install `ccache` to speed up the compiler build on Linux.
+    Install ccache to speed up the compiler build on Linux.
 
 ```sh
 sudo apt install ccache
@@ -72,4 +72,14 @@ sudo apt update
 sudo apt install lld
 ```
 
+</details>
+
+<details>
+  <summary>Click to expand!</summary>
+  
+  ```javascript
+    function logSometing(something) {
+      console.log(`Logging: ${something}`);
+    }
+  ```
 </details>
