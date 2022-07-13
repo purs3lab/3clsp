@@ -51,7 +51,7 @@ Bear is [packaged](https://repology.org/project/bear/versions) for many distribu
 
 
 <details>
-    <summary id="#header-3">CCache(Optional)</summary>
+    <summary><p id="#header-3">CCache(Optional)</p></summary>
     Foldable Content[enter image description here][1]
 </details>
 ### [](#header-3)Ccache (OPTIONAL)
