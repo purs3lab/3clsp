@@ -3,6 +3,7 @@ layout: default
 title: Usage
 nav_order: 4
 has_children: true
+youtubeId: H1LyfBN02Tk
 ---
 # [](#header-1) Usage Details
 
@@ -21,3 +22,7 @@ bear make
 ```
 
 After you load in the project in VSCode open up `program1.c` or `program2.c` and run the steps we mentioned earlier in Extension Usage. After the conversion has taken place you can see that the code was successfully converted and that `program2.c` had a root cause that was the result of an unsafe casting. If you proceed and make this pointer non-WILD by choosing the appropriate code action. You can see that an unsafe `z` pointer was now converted into a `checked pointer`.
+
+### [](#header-3) tiny-bignum-c Project
+
+{% include youtubePlayer.html id=page.H1LyfBN02Tk %}
