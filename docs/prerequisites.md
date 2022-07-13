@@ -49,23 +49,27 @@ sudo apt install bear
 
 Bear is [packaged](https://repology.org/project/bear/versions) for many distributions. Check out your package manager.
 
+The output file called `compile_commands.json` is saved in the current directory.
+
 
 <details>
     <summary>CCache(Optional)</summary>
     Install `ccache` to speed up the compiler build on Linux.
+
 ```sh
 sudo apt install ccache
 ```
+
 </details>
 
 
-
-
-### [](#header-3)lld (OPTIONAL)
-LLD is a new, high-performance linker. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project. 
-
+<details>
+    <summary>lld(Optional)</summary>
+    LLD is a new, high-performance linker.
 
 ```sh
 sudo apt update
 sudo apt install lld
 ```
+
+</details>
