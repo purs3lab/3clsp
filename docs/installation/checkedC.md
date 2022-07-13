@@ -30,25 +30,18 @@ ninja clang 3c 3Cclangd
 <details>
     <summary>Extra Build Options</summary>
     <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-
-- The above instructions already assume the use of the [Ninja](https://ninja-build.org/) build tool; you may have to install it. You can alternatively use `make` (remove `-G Ninja` from the `cmake` command and replace `ninja` with `make`), but Ninja is
-  much faster in our experience.
-
-- Pass `-DLLVM_USE_LINKER=lld`. This requires a sufficiently recent
-  version of `lld` to be installed on your system.
-
-
-- Pass `-DLLVM_APPEND_VC_REV=OFF` to turn off embedding of your Git
+  <li>The above instructions already assume the use of the [Ninja](https://ninja-build.org/) build tool; you may have to install it. You can alternatively use `make` (remove `-G Ninja` from the `cmake` command and replace `ninja` with `make`), but Ninja is
+  much faster in our experience.</li>
+  <li>Pass `-DLLVM_USE_LINKER=lld`. This requires a sufficiently recent
+  version of `lld` to be installed on your system.</li>
+  <li>Pass `-DLLVM_APPEND_VC_REV=OFF` to turn off embedding of your Git
   head commit ID in the executables and thus avoid the need to re-link
-  all of them every time the commit ID changes.
-
-- You might want to use `-DCMAKE_BUILD_TYPE=RelWithDebInfo` if you are running 3C enough between builds
+  all of them every time the commit ID changes.</li>
+  <li>You might want to use `-DCMAKE_BUILD_TYPE=RelWithDebInfo` if you are running 3C enough between builds</li>
+</ul> 
 </details>
 
+[See ccache Installation Steps](https://purs3lab.github.io/3clsp/docs/prerequisites.html#ccacheoptional)
 [See lld Installation Steps](https://purs3lab.github.io/3clsp/docs/prerequisites.html#lldoptional)
 
 
