@@ -39,7 +39,21 @@ This tool will build the compiler and all other supporting tools on your system.
 ```sh
 sudo apt install ninja-build
 ```
+### [](#header-3)Bear
+3clsp needs a compilation databse to work. Bear uses your build command to automatically create CompDBs.
 
+```sh
+sudo apt install bear
+```
+[Bear Repo](https://github.com/rizsotto/Bear){: .btn .btn-purple }
+
+Bear is [packaged](https://repology.org/project/bear/versions) for many distributions. Check out your package manager.
+
+
+<details>
+    <summary id="#header-3">CCache(Optional)</summary>
+    Foldable Content[enter image description here][1]
+</details>
 ### [](#header-3)Ccache (OPTIONAL)
 Install `ccache` to speed up the compiler build on Linux and
 MacOS. [ ccache](https://ccache.samba.org) is a smart cache for GCC or Clang. It

@@ -6,10 +6,25 @@ has_children: true
 ---
 # [](#header-1) Usage Details
 
-## [](#header-2) Compilation Databases
-A compilation database is a **JSON file**, which consist of an array of “command objects”, where each command object specifies one way a translation unit is compiled in the project. Each command object contains the translation unit's main file, the working directory of the compile run and the actual compile command.
+### [](#header-3) Simple Test Project
 
-3clsp needs a compilation databse to work. A compilation database specifies which files in your project 3c needs to work on. 
+To make yourself familiar with the usage of the tool, start with a small project with upto 5 **C** files. If you don't have one checkout the following repo for testing purposes. Make sure that you have Bear and make installed on your PC and checkout the pre-requisites for the tool before you start testing and using tool.
+
+[Sample Repository](https://github.com/Vedaant-Rajoo/test3cproject.git){: .btn .btn-purple }
+
+Or just paste the following to get started:
+
+```sh
+git clone https://github.com/Vedaant-Rajoo/test3cproject.git
+cd test3cproject
+bear make
+```
+
+After you load in the project in VSCode open up `program1.c` or `program2.c` and run the steps we mentioned earlier in Extension Usage. After the conversion has taken place you can see that the code was successfully converted and that `program2.c` had a root cause that was the result of an unsafe casting. If you proceed and make this pointer non-WILD by choosing the appropriate code action. You can see that an unsafe `z` pointer was now converted into a `checked pointer`.
+
+
+
+
 
 ### [](#header-3)Creating Compile DBs
 Compile databses can be lengthy to write and can become complicated at times. If your project uses build systems like **make, boost, SCons etc.** You can leverage the use of a tool called **Bear** that generates a compilation database for clang tooling. Some build system natively supports the generation of JSON compilation database. For projects which does not use such build tool, Bear generates the JSON file during the build process.
