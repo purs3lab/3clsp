@@ -51,24 +51,15 @@ Bear is [packaged](https://repology.org/project/bear/versions) for many distribu
 
 
 <details>
-    <summary><p id="#header-3">CCache(Optional)</p></summary>
-    Foldable Content[enter image description here][1]
-</details>
-### [](#header-3)Ccache (OPTIONAL)
-Install `ccache` to speed up the compiler build on Linux and
-MacOS. [ ccache](https://ccache.samba.org) is a smart cache for GCC or Clang. It
-works as a shim, and uses the hash of source files and their included headers
-and build options to decide if an output needs recompiling, instead of file
-modification time (which CMake uses). In some circumstances, this can cut
-second-build (i.e. `ninja` where some of the files are already built) time down
-from 5 minutes to 30 seconds. This still depends on how your header files and
-includes are organized. Moreover, there are ways to share and control the size
-of the cache directory, which is where `ccache` stores a copy of any object
-files it has compiled.
-
+    <summary>CCache(Optional)</summary>
+    Install `ccache` to speed up the compiler build on Linux.
 ```sh
 sudo apt install ccache
 ```
+</details>
+
+
+
 
 ### [](#header-3)lld (OPTIONAL)
 LLD is a new, high-performance linker. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project. 
