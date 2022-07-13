@@ -73,13 +73,18 @@ sudo apt install lld
 ```
 
 </details>
+{% capture text-capture %}
 
-<details>
-  <summary>Click to expand!</summary>
-  
-  ```javascript
-    function logSometing(something) {
-      console.log(`Logging: ${something}`);
-    }
-  ```
-</details>
+```html
+
+<div class="demo-thats-all-container">  
+    <div class="demo-thats-all-folks">
+      That's All Folks
+    </div>
+</div>
+
+``` <!-- remove escape '\' in your code -->
+
+{% endcapture %}
+
+{% include widgets/toggle-field.html toggle-name="toggle-thats" button-text="Cod for Thats All Folks" toggle-text=text-capture  footer="cheers!" %}
