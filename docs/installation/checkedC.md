@@ -44,7 +44,7 @@ ninja clang 3c 3Cclangd
 - You might want to use `-DCMAKE_BUILD_TYPE=RelWithDebInfo` if you are running 3C enough between builds
 </details>
 
-[See lld Installation]({{ site.baseurl }}{% link docs/prerequisites.md %})
+[See lld Installation Steps]({{ site.baseurl }}{% link docs/prerequisites.md#lldoptional %})
 
 
 
