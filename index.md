@@ -12,6 +12,8 @@ permalink: /
 3CLSP is a language server protocol plugin that assists you to convert **C** to a memory-safe version called **Checked C**.
 {: .fs-5 .fw-300 }
 
+[Developed by PurS3 Lab](https://purs3lab.github.io/){: .btn btn-indigo }
+
 ## What is Checked C?
 As we all know C is memory unsafe language and can contain serious vulnerabilities such as spatial and temporal memory issues. Checked C is a **safe dialect of C** developed by Microsoft, which prevents spatial memory issues (e.g., buffer overruns, out-of-bounds accesses). Checked C provides **3 pointer annotations**, which developer can use to annotate pointers that will help in preventing spatial issues.
 
