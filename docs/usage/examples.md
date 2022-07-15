@@ -28,10 +28,16 @@ code .
 - Press `Ctrl+Shift+P`, this opens up the command palette.
 - `Run 3c on the project`
 
-
+> Take a look at the video below if you come across any problems.
 {% include youtube.html id='H2WfbnFl4cQ' %}
 
 ### [](#header-3) Second Simple Project
+
+This folder consists of two interrelated `C` files.
+
+- If you already cloned the repo mentioned above.
+- Navigate to `simple2` folder and repeat `bear make`.
+- 
 
 ### [](#header-3) tiny-bignum-c Project
 
