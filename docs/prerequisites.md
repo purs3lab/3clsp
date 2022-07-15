@@ -3,7 +3,8 @@ layout: default
 title: Pre-Requisites
 nav_order: 2
 ---
-
+#### All the following tools and libraries were installed and tested to work on Ubuntu 18.04 and above.
+{: .text-green-200}
 # Pre-Requisites
 {: .no_toc }
 

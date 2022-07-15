@@ -6,7 +6,7 @@ description: "This tool helps you convert your unsafe legacy C code to a more me
 permalink: /
 ---
 
-# A better &  easier way to convert your unsafe C code
+# A better & easier way to convert your memory unsafe C code
 {: .fs-9 }
 
 3CLSP gives you the power to convert your **legacy C code** to a memory-safe version of C called **CheckedC**. 
@@ -45,8 +45,3 @@ int main(void) {
 
 
 [More Info on CheckedC](https://github.com/secure-sw-dev/checkedc/wiki){: .btn .btn-purple }
-
-<details>
-    <summary>Toggle Switch</summary>
-    Foldable Content[enter image description here][1]
-</details>
