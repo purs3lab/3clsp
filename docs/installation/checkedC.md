@@ -27,6 +27,13 @@ cmake ../llvm -G Ninja -DLLVM_ENABLE_PROJECTS="clang,3c,clang-tools-extra" -DLLV
 ninja clang 3c 3Cclangd
 ```
 
+#### TARGETS 
+{: .text-blue-100}
+
+- `clang` : This is the checkedC version of clang compiler. You need this to compile and run your converted code.
+- `3c` : This is the conversion library our tool is build on top of.
+- `3Cclangd` : The LSP server that works with your editor to leverage automated feedback supported conversion. 
+
 <details>
     <summary>Extra Build Options</summary>
     <ul>
