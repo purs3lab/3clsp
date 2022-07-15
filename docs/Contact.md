@@ -9,6 +9,12 @@ nav_order: 7
 
 {% include github-vedaant.html %}
 
+{% include aravind.html %}
+
+
+### [](#header-3) Discord Server
+
+You can also join our discord server for upcoming updates and bug fixes. You can also contact the admins for help with converting your code.
 
 {% include discord.html %}
 

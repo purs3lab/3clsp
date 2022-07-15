@@ -32,23 +32,6 @@ int main(int argc, nt_array_ptr<char> argv checked[] : count(argc)) {
 
 If you have a copy of the Checked C repo and clang is on your path, just go to the sample directory and run `clang hello-world.c` to compile the program.
 
-### [](#header-3) RunTime Checking Failures
-
-If bounds checking or other Checked C runtime checks fail, your program will execute an illegal instruction. You can use C signal handling to catch the illegal instruction signal and have your program exit gracefully. For example:
-```c
-#include <stdlib_checked.h>
-#include <signal_checked.h>
-
-void handle_error(int err) {
-  _Exit(1);
-}
-
-int main(int argc, _Array_ptr<_Nt_array_ptr<char>> argv : count(argc)) {
-  // Set up the handler for a failing runtime check.   A SIGILL is raised when a Checked C
-  // runtime check fails.
-  signal(SIGILL, handle_error);
-  ...
-```
 
 ### [](#header-3) Warnings for Checking of Bounds Declaration
 
