@@ -27,6 +27,21 @@ cmake ../llvm -G Ninja -DLLVM_ENABLE_PROJECTS="clang,3c,clang-tools-extra" -DLLV
 ninja clang 3c 3Cclangd
 ```
 
+### [](#header-3)PATH Instructions
+{: .text-purple-200}
+If you want to use any of the tools you built above to work on your terminal window, you will need to add them to your `PATH` environment variable.
+- After sucessfully building do the following:
+```sh
+cd bin
+pwd
+```
+- This will return the `PATH`(something like `checkedc-llvm-project/build/bin` at the end) of your build files (If you didn't change the directory after building).
+- And then set the variable using the command:
+```sh
+export PATH=$PATH:the/path/you/got
+```
+If you already have the normal legacy version of `clang` compiler installed on your system, the new checked version might interfere with its operation. This new version of `clang` is **backward-compatible**, i.e it works with checked and unchecked C code. So remove the old `clang` from your system and set the PATH to your new `clang` compiler using the steps above.
+{: .text-red-200}
 #### TARGETS 
 {: .text-blue-100}
 

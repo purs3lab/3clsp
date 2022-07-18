@@ -55,3 +55,7 @@ Before you start conversion using the tool.
 - Once you press the light bulb, you are presented with two options. First `Make this pointer non-Wild and apply the observation everwhere`, this option makes sure that the pointer is made non-wild and make all the pointers that are wild due to the same reason non-Wild too. This option is generally safer if you have a good grip on what your project is coded like. But most times it's safer to convert these pointers one by one. This can be done by choosing the second option `Make ONLY this pointer non-WILD`.
 
 - After selecting any one of these options, the tool will again rewrite your file but this time the aforementioned pointer would be safe or Checked. You might need to go through every one of the diagnostics and choose for yourself wheter the pointer you are about to declare is safe is indeed spatially safe. Most of the times our tool will mark a pointer as WILD because it it unsure how how the pointer is used in the project.
+
+## [](#header-2) After Successful Conversion
+{: .text-green-200}
+- After the conversion process is complete, you need to compile your new checked `C` code. If you followed the `PATH` [instructions](https://purs3lab.github.io/3clsp/docs/installation/checkedC.html#targets) you should have the compiler on your terminal.
