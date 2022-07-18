@@ -40,8 +40,10 @@ pwd
 ```sh
 export PATH=$PATH:the/path/you/got
 ```
-If you already have the normal legacy version of `clang` compiler installed on your system, the new checked version might interfere with its operation. This new version of `clang` is **backward-compatible**, i.e it works with checked and unchecked C code. So remove the old `clang` from your system and set the PATH to your new `clang` compiler using the steps above.
+#### Caution
 {: .text-red-200}
+If you already have the normal legacy version of `clang` compiler installed on your system, the new checked version might interfere with its operation. This new version of `clang` is **backward-compatible**, i.e it works with checked and unchecked C code. So remove the old `clang` from your system and set the PATH to your new `clang` compiler using the steps above.
+
 #### TARGETS 
 {: .text-blue-100}
 

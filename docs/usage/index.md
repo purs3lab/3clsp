@@ -58,4 +58,8 @@ Before you start conversion using the tool.
 
 ## [](#header-2) After Successful Conversion
 {: .text-green-200}
-- After the conversion process is complete, you need to compile your new checked `C` code. If you followed the `PATH` [instructions](https://purs3lab.github.io/3clsp/docs/installation/checkedC.html#targets) you should have the compiler on your terminal.
+- After the conversion process is complete, you need to compile your new checked `C` code. If you followed the [PATH instructions](https://purs3lab.github.io/3clsp/docs/installation/checkedC.html#path-instructions) you should have the compiler on your terminal.
+- Compile your code using:
+```sh
+clang file-name.c
+```

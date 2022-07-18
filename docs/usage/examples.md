@@ -49,3 +49,12 @@ This folder is widely used `C` library and will serve as an entry point for your
 - After the diagnostics appear, solve them one by one with the help of code actions.
 
 Beware this is a big library and our tool can't convert the code completely. Even after the root causes are solved, the code won't compile because it needs a little refactoring. Refer to [this link](https://github.com/secure-sw-dev/checkedc-tiny-bignum-c#initial-conversion) for information on the changes to make before it can successfully compile.
+
+## [](#header-2) Post Conversion
+{: .text-green-200}
+- If you're satisfied with your conversion, save the project (using `Ctrl+S`) so that the changes are permanant (You can skip this step if you have `Auto Save` turned on in VSCode).
+- Compile your code using `clang file-name.c` in your terminal.
+
+#### Caution
+{: .text-red-200}
+The code might not compile because of some minor changes that our tool can't write by it's own. Some conversion requires refactoring that helps compile the file. If you need help with your project conversion, join our [discord server](https://purs3lab.github.io/3clsp/docs/Contact.html#-discord-server) for tips and help from checkedC developers and admins.
