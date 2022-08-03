@@ -19,7 +19,7 @@ This error states that the `clang` compiler executable was not found. Make sure 
 ## I get Compilation Errors while using the tool to convert.
 {: .text-purple-000}
 You may get some compilation errors while trying to compile certain libraries with Checked C clang. For instance, we got the following error while trying to compile `Icecast` server.
-![](../../assets/images/compileerror.png)
+![](../assets/images/compileerror.png)
 
 This is because of compatibility issues with `GNU_SOURCE` macros. We fixed it by removing the definition of this macro in the configure script.
 
