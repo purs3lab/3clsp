@@ -18,4 +18,14 @@ This error states that the `clang` compiler executable was not found. Make sure 
 
 ## I get Compilation Errors while using the tool to convert.
 {: .text-purple-000}
-If you are trying to convert libraries, they have build instructions that are strict and allow no errors or warnings. This is done because of the safe usage of the library. But our tool, which extensively works on a compilation database doesn't need these strict instructions. Take a look at the steps we took [here](https://github.com/purs3lab/oopsla22-3c-artifact/blob/main/3c-actions-old-fork/.github/workflows/exhaustivestats.yml#L3231) to make sure **icecast** was safe to convert without compilation errors. If you still need help, join our discord server and ping our admins.
+You may get some compilation errors while trying to compile certain libraries with Checked C clang. For instance, we got the following error while trying to compile `Icecast` server.
+![](../../assets/images/compileerror.png)
+
+This is because of compatibility issues with `GNU_SOURCE` macros. We fixed it by removing the definition of this macro in the configure script.
+
+```sh
+cd icecast-2.4.4
+sed -i '/_GNU_SOURCE/d' configure
+```
+
+You can find other changes we do for various libraries [here](https://github.com/purs3lab/oopsla22-3c-artifact/blob/main/3c-actions-old-fork/.github/workflows/exhaustivestats.yml#L3231). If you still need help, join our discord server and ping our admins.
