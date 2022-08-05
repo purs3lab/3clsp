@@ -11,7 +11,7 @@ With the latest path updates to the extension. We added a new feature to **Backu
 
 ### [](#header-3) Caution
 {: 	.text-red-300}
-The feature uses `filesystem` npm module for backing and restoring. So make sure that VSCode has the necessary permissions and always remember to backup first before you restore.
+The feature uses `fs-extra` npm module for backing and restoring. So make sure that VSCode has the necessary permissions and always remember to backup first before you restore.
 {: 	.text-red-300}
 
 ### [](#header-3) Backing Up
