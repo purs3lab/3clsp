@@ -64,6 +64,6 @@ Before you start conversion using the tool.
 clang file-name.c
 ```
 
-### [](#header-3) Not Happy with your conversion
+## [](#header-2) Not Happy with your conversion
 {: .text-red-200}
 - [Backup and Restore your Project](https://purs3lab.github.io/3clsp/docs/usage/backup_restore.html#-not-happy-with-your-conversion)
