@@ -23,7 +23,7 @@ cd checkedc-llvm-project
 # repository you use.
 git clone https://github.com/microsoft/checkedc llvm/projects/checkedc-wrapper/checkedc
 mkdir build && cd build
-cmake ../llvm -G Ninja -DLLVM_ENABLE_PROJECTS="clang,3c,clang-tools-extra" -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_USE_SPLIT_DWARF=ON -DLLVM_OPTIMIZED_TABLEGEN=ON
+cmake ../llvm -G Ninja -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_USE_SPLIT_DWARF=ON -DLLVM_OPTIMIZED_TABLEGEN=ON
 ninja clang 3c 3Cclangd
 ```
 
